@@ -4,4 +4,4 @@ services:
     build: .
     tty: true
     volumes:
-      - .:/intro-curriculum-4004
+      - .:/practice-intro-4004
