@@ -8,3 +8,6 @@ RUN localedef -f UTF-8 -i ja_JP ja_JP
 ENV LANG ja_JP.UTF-8
 ENV TZ Asia/Tokyo
 WORKDIR /practice-intro-4004
+COPY package.json .
+RUN yarn install
+COPY . ./

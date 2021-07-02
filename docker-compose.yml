@@ -5,3 +5,4 @@ services:
     tty: true
     volumes:
       - .:/practice-intro-4004
+      - /practice-intro-4004/node_modules
