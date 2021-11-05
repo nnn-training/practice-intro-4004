@@ -1,4 +1,3 @@
-
 FROM node:14.15.4
 
 RUN apt-get update
@@ -10,4 +9,3 @@ ENV TZ Asia/Tokyo
 WORKDIR /practice-intro-4004
 COPY package.json .
 RUN yarn install
-COPY . ./

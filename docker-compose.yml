@@ -5,4 +5,5 @@ services:
     tty: true
     volumes:
       - .:/practice-intro-4004
+      # ホストの node_modules がマウントされないように
       - /practice-intro-4004/node_modules
