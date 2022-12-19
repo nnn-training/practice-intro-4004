@@ -1,7 +1,7 @@
 {
   "name": "damage-calc",
   "version": "1.0.0",
-  "description": "caliculator of damage",
+  "description": "calculator of damage",
   "main": "index.js",
   "author": "",
   "scripts": {
