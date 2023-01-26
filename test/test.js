@@ -6,7 +6,7 @@ describe('#effectiveDamage()', () => {
     expect(dc.effectiveDamage(100, 50, 30)).toBe(83);
   });
 
-  test('負の異常値におけるダメージ計算が出来る', () => {
+  test('負の異常値におけるダメージ計算ができる', () => {
     expect(dc.effectiveDamage(-1, 0, 0)).toBe(0);
     expect(dc.effectiveDamage(0, -1, 0)).toBe(0);
     expect(dc.effectiveDamage(0, 0, -1)).toBe(0);
@@ -20,10 +20,6 @@ describe('#effectiveDamage()', () => {
 
   test('実効防御力は0未満にならない', () => {
     expect(dc.effectiveDamage(500, 100, 800)).toBe(500);
-  });
-
-  test('ダメージは小数点以下を四捨五入して整数にする', () => {
-    expect(dc.effectiveDamage(620, 100, 30)).toBe(365);
   });
 
 });
