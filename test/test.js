@@ -21,5 +21,7 @@ describe('#effectiveDamage()', () => {
   test('実効防御力は0未満にならない', () => {
     expect(dc.effectiveDamage(500, 100, 800)).toBe(500);
   });
-
+  test('damage round up decimal ponint or less return integer', () => {
+     expect(dc.effectiveDamage(620, 100, 30)).toBe(365);
+  });
 });
