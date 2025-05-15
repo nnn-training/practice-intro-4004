@@ -3,4 +3,4 @@ services:
     build: .
     tty: true
     volumes:
-      - .:/practice-intro-4004
+      - .:/app
